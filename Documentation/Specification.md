@@ -37,3 +37,13 @@ The referee registers with the web site. They can view all unassigned games (in 
 
 #3 Payment
 Once a game owner accepts a bid, we take the agreed $. Once the game owner marks the game as complete, funds are sent to the referee -10% for us.
+
+
+# Application Flow
+## Basic Flow
+1. The Game Owner records a game
+2. Referee's bid on the game. Part of the bid includes how much they want to be paid
+3. The Game Owner accepts a bid
+4. We take the Money of the bid amount from the game owner
+5. The Game Owner confirms the game has been held correctly
+6. We pay the referee
