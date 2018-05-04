@@ -47,3 +47,16 @@ Once a game owner accepts a bid, we take the agreed $. Once the game owner marks
 4. We take the Money of the bid amount from the game owner
 5. The Game Owner confirms the game has been held correctly
 6. We pay the referee
+
+
+# Architecture
+The system shall be architected as follows:
+
+## Front-End
+Node.js front end hosted on Firebase
+
+## Back-End
+FireBase No-SQL Cloud-FireStore
+
+## Functions
+Delivered as micro-services node.js functions through FireBase functions
