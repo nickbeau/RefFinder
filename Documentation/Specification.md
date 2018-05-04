@@ -26,3 +26,14 @@ the Key data structures are as follows
 | ID        | Referee ID Number | The ID of the Referee |
 | email     | Email             | Referee's Email |
 | Accreditation | string        | Referee's accreditation |
+
+
+# User Stories
+#001 Game Owner
+The Game Owner registers with the web site. They can then post games that require referees. They can see a list of games they have posted and games that require a referee. Once a referee bids on a game, they get notifications. They can accept a referee and that referee is then appointed to the game
+
+#002 Referee
+The referee registers with the web site. They can view all unassigned games (in the future). They can place a bid on a game. Once they are successful, they can see a list of games assigned to them. Once they have officiated the game, they can then see the history of games they have done. Once the game owner accepts the game as complete, payment is made
+
+#003 Payment
+Once a game owner accepts a bid, we take the agreed $. Once the game owner marks the game as complete, funds are sent to the referee -10% for us.
