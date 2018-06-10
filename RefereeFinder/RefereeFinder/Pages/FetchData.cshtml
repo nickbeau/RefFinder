@@ -1,0 +1,48 @@
+﻿@page "/fetchdata"
+@inject HttpClient Http
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (associations == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Acronym</th>
+                <th>Name</th>
+           
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var association in associations)
+            {
+                <tr>
+                    <td>@association.Acronym</td>
+                    <td>@association.Name</td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@functions {
+   Associations[] associations;
+
+    protected override async Task OnInitAsync()
+    {
+        associations = await Http.GetJsonAsync<Associations[]>(@"https://reffinder-3fe4d.firebaseio.com/Assocations.json");
+    }
+
+    class Associations
+    {
+        public string Acronym { get; set; }
+        public string Name { get; set; }
+    }
+}
